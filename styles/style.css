@@ -8,7 +8,13 @@ body {
   overflow-x: hidden;
 }
 
+*::selection {
+  background-color: #fcd34d;
+  color: #141414;
+}
+
 .hero::before {
+  filter: blur(3px);
   content: "";
   position: absolute;
   top: 0;
@@ -20,7 +26,7 @@ body {
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
-  opacity: 0.35;
+  opacity: 0.5;
 }
 
 .bg-dark-blue {
@@ -59,61 +65,4 @@ body {
 
 .grid-template-columns {
   grid-template-columns: repeat(auto-fit, minmax(auto, 375px));
-}
-
-@keyframes floating {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
-
-  10% {
-    -webkit-transform: translate(-6px, -16px);
-    transform: translate(-6px, -16px);
-  }
-
-  20% {
-    -webkit-transform: translate(16px, -6px);
-    transform: translate(16px, -6px);
-  }
-
-  30% {
-    -webkit-transform: translate(-6px, 14px);
-    transform: translate(-6px, 24px);
-  }
-
-  40% {
-    -webkit-transform: translate(16px, 16px);
-    transform: translate(16px, 16px);
-  }
-
-  50% {
-    -webkit-transform: translate(-6px, -12px);
-    transform: translate(-6px, -12px);
-  }
-
-  60% {
-    -webkit-transform: translate(16px, -6px);
-    transform: translate(16px, -6px);
-  }
-
-  70% {
-    -webkit-transform: translate(-6px, 40px);
-    transform: translate(-6px, 40px);
-  }
-
-  80% {
-    -webkit-transform: translate(-12px, -10px);
-    transform: translate(-12px, -10px);
-  }
-
-  90% {
-    -webkit-transform: translate(16px, -6px);
-    transform: translate(16px, -6px);
-  }
-
-  100% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
-  }
 }
