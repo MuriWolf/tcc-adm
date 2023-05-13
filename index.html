@@ -3,27 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>tcc adm</title>
+	<title>ínicio - South Tech</title>
 		<link rel="stylesheet" href="styles/style.css">
 	  <script src="https://cdn.tailwindcss.com"></script>
-	<meta name="description" content="Projeto de cursos voltados para a área de tecnologia">
+	<meta name="description" content="SOUTH TECH, cursos voltados para a área de tecnologia">
 	<link rel="shortcut icon" href="./assets/favicon_io/favicon-32x32.png" type="image/x-icon">
 </head>
 <body class="bg-dark-blue w-screen overflow-x-hidden highlight-yellow text-gray-700"> 
 	<header class="hero overflow-y-hidden pt-3 mx-auto h-screen max-h-[46rem]">
 		<div class="container mx-auto flex justify-between items-center px-4">
 
-			<div style="height: 60px; width: 60px; border-radius: 100px; background-color: white;"></div> <!-- LOGO IMAGE -->
+			<a href="#">
+				<div style="height: 60px; width: 60px; border-radius: 100px; background-color: white;"></div>
+			</a> <!-- LOGO IMAGE -->
 			
 			<nav class="flex items-center">
 				<ul class="hidden sm:flex gap-4">
-					<li><a href="#"><img class="h-8 " src="./assets/youtube.svg" alt=""></a></li>
-					<li><a href="#"><img class="h-8" src="./assets/facebook.svg" alt=""></a></li>
-					<li><a href="#"><img class="h-8" src="./assets/instagram.svg" alt=""></a></li>
+					<li class="transition-all"><a class="text-white hover:text-yellow-400 focus:text-yellow-400" href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+					<li class="transition-all"><a class="text-white hover:text-yellow-400 focus:text-yellow-400" href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+					<li class="transition-all"><a class="text-white hover:text-yellow-400 focus:text-yellow-400" href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
 				</ul>
 				<ul class="flex gap-4 ml-8 items-center">
-					<li><a href="" class="text-white">Sobre nós</a></li>
-					<li><a href="" class="bg-white inline-block py-2 px-3 rounded hover:shadow">Cadastro</a></li>
+					<li><a href="pages/sobre-nos.html" class="text-white text-lg hover:text-yellow-400 focus:text-yellow-400 hover:font-bold focus:font-bold">Sobre nós</a></li>
+					<li><a href="./pages/pagina-cadastro.html" class="bg-white inline-block py-2 px-3 rounded hover:shadow hover:bg-yellow-400 focus:bg-yellow-400 hover:font-bold focus:font-bold transition-all focus:scale-105">Cadastro</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -47,7 +49,7 @@
 						<p>Compromisso com inovação, ética e qualidade em uma educação transformadora e responsável.</p>
 					</div>
 
-					<div class="basis-60 img-colors-de-fundo flex-1 z-10 rounded-3xl relative max-w-lg border-black border-dashed border-4" ><img class="rounded-3xl" src="./assets/stem-t4l-l862hX_FET8-unsplash.jpg" alt=""></div>
+					<div class="basis-60 img-colors-de-fundo flex-1 z-10 rounded-3xl relative max-w-lg border-black border-dashed border-4" ><img class="rounded-3xl" src="./assets/kids-with-glasses.webp" alt=""></div>
 				</div>
 			</div>
 		</section>
@@ -55,45 +57,35 @@
 			<div class="container max-w-7xl mx-auto px-4">
 				<h2 class="text-3xl font-semibold text-center text-white">Conheça nossos cursos</h2>
 				<div class="cursos grid justify-center grid-template-columns gap-8 mt-10">
+
+					<!-- FAZER UM LOOP COM PHP PARA FAZER APARECER OS CARDS -->
 					<div class="bg-white p-6 rounded-xl transition-all border-black border-2">
-						<div class=" rounded overflow-hidden border-4 border-yellow-500" ><img src="./assets/pexels-danny-meneses-943096.jpg" alt="" ></div>
+						<div class="rounded overflow-hidden border-2 border-dashed border-black" ><img src="./assets/notebook.webp" alt="" ></div>
 						<h2 class="text-xl font-bold mt-4 text-gray-900">Ciência da Computação</h2>
 						<p class="text-gray-900">Ciência da Computação é o curso que estuda tecnologias e conceitos relacionados a computação e informática. O curso envolve programação, algoritmos, desenvolvimento de sistemas e habilidades em inteligência artificial e segurança da informação. O objetivo é formar profissionais capazes de atuar na indústria de tecnologia.</p>
-						<a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular" href="">Matricular-se</a>
+						<a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular transition-all hover:scale-105 focus:scale-105 relative hover:shadow-xl focus:shadow-xl" href="">Matricular-se</a>
 					</div>	
-					<div class=" bg-white p-6 rounded-xl transition-all border-black border-2">
-						<div class=" rounded overflow-hidden border-4 border-yellow-500"><img src="./assets/pexels-danny-meneses-943096.jpg"
-								alt=""></div>
+					<div class="bg-white p-6 rounded-xl transition-all border-black border-2">
+						<div class="rounded overflow-hidden border-2 border-dashed border-black" ><img src="./assets/notebook.webp" alt="" ></div>
 						<h2 class="text-xl font-bold mt-4 text-gray-900">Ciência da Computação</h2>
-						<p class="text-gray-900">Ciência da Computação é o curso que estuda tecnologias e conceitos relacionados a
-							computação e informática. O curso envolve programação, algoritmos, desenvolvimento de sistemas e habilidades em
-							inteligência artificial e segurança da informação. O objetivo é formar profissionais capazes de atuar na
-							indústria de tecnologia.</p>
-						<a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
-							href="">Matricular-se</a>
-					</div>
-					<div class=" bg-white p-6 rounded-xl transition-all border-black border-2">
-						<div class="rounded overflow-hidden border-4 border-yellow-500"><img src="./assets/pexels-danny-meneses-943096.jpg"
-								alt=""></div>
+						<p class="text-gray-900">Ciência da Computação é o curso que estuda tecnologias e conceitos relacionados a computação e informática. O curso envolve programação, algoritmos, desenvolvimento de sistemas e habilidades em inteligência artificial e segurança da informação. O objetivo é formar profissionais capazes de atuar na indústria de tecnologia.</p>
+						<a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular transition-all hover:scale-105 focus:scale-105 relative hover:shadow-xl focus:shadow-xl" href="">Matricular-se</a>
+					</div>	
+					<div class="bg-white p-6 rounded-xl transition-all border-black border-2">
+						<div class="rounded overflow-hidden border-2 border-dashed border-black" ><img src="./assets/notebook.webp" alt="" ></div>
 						<h2 class="text-xl font-bold mt-4 text-gray-900">Ciência da Computação</h2>
-						<p class="text-gray-900">Ciência da Computação é o curso que estuda tecnologias e conceitos relacionados a
-							computação e informática. O curso envolve programação, algoritmos, desenvolvimento de sistemas e habilidades em
-							inteligência artificial e segurança da informação. O objetivo é formar profissionais capazes de atuar na
-							indústria de tecnologia.</p>
-						<a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
-							href="">Matricular-se</a>
-					</div>
-					<div class=" bg-white p-6 rounded-xl transition-all border-black border-2">
-						<div class="rounded overflow-hidden border-4 border-yellow-500"><img src="./assets/pexels-danny-meneses-943096.jpg"
-								alt=""></div>
+						<p class="text-gray-900">Ciência da Computação é o curso que estuda tecnologias e conceitos relacionados a computação e informática. O curso envolve programação, algoritmos, desenvolvimento de sistemas e habilidades em inteligência artificial e segurança da informação. O objetivo é formar profissionais capazes de atuar na indústria de tecnologia.</p>
+						<a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular transition-all hover:scale-105 focus:scale-105 relative hover:shadow-xl focus:shadow-xl" href="">Matricular-se</a>
+					</div>	
+					<div class="bg-white p-6 rounded-xl transition-all border-black border-2">
+						<div class="rounded overflow-hidden border-2 border-dashed border-black" ><img src="./assets/notebook.webp" alt="" ></div>
 						<h2 class="text-xl font-bold mt-4 text-gray-900">Ciência da Computação</h2>
-						<p class="text-gray-900">Ciência da Computação é o curso que estuda tecnologias e conceitos relacionados a
-							computação e informática. O curso envolve programação, algoritmos, desenvolvimento de sistemas e habilidades em
-							inteligência artificial e segurança da informação. O objetivo é formar profissionais capazes de atuar na
-							indústria de tecnologia.</p>
-						<a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
-							href="">Matricular-se</a>
-					</div>
+						<p class="text-gray-900">Ciência da Computação é o curso que estuda tecnologias e conceitos relacionados a computação e informática. O curso envolve programação, algoritmos, desenvolvimento de sistemas e habilidades em inteligência artificial e segurança da informação. O objetivo é formar profissionais capazes de atuar na indústria de tecnologia.</p>
+						<a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular transition-all hover:scale-105 focus:scale-105 relative hover:shadow-xl focus:shadow-xl" href="">Matricular-se</a>
+					</div>	
+					
+
+
 
 				</div>
 			</div>
@@ -106,7 +98,7 @@
 				</div>
 				<div class="flex-1 basis-60">
 					<h2 class="text-3xl font-semibold border-b-2 border-yellow-400 mb-4 text-gray-900">Alguns dados...</h2>
-					<ul class="flex flex-col gap-3 list-disc">
+					<ul class="flex flex-col gap-3 lg:list-disc">
 						<li>
 							De acordo com o relatório "Future of Jobs" do Fórum Econômico Mundial, habilidades como a capacidade de <span class="bg-yellow-300">trabalhar com tecnologia serão essenciais para 85% dos empregos do futuro.</span>
 						</li>
@@ -125,12 +117,13 @@
 			<h4 class="text-white text-lg">© 2023 (Nome da escola)</h4>
 			<nav class="flex items-center">
 				<ul class="flex gap-4">
-					<li><a href=""><img class="h-8 " src="./assets/youtube.svg" alt=""></a></li>
-					<li><a href=""><img class="h-8" src="./assets/facebook.svg" alt=""></a></li>
-					<li><a href=""><img class="h-8" src="./assets/instagram.svg" alt=""></a></li>
+					<li class="transition-all"><a class="text-white hover:text-yellow-400 focus:text-yellow-400" href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+					<li class="transition-all"><a class="text-white hover:text-yellow-400 focus:text-yellow-400" href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+					<li class="transition-all"><a class="text-white hover:text-yellow-400 focus:text-yellow-400" href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
 				</ul>
 			</nav>
 		</div>
 	</footer>
+	<script src="https://kit.fontawesome.com/cbd566114a.js" crossorigin="anonymous"></script>
 </body>
 </html>

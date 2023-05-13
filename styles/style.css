@@ -22,9 +22,9 @@ body {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background: url("../assets/ai-generated-7828310_1920.jpg");
+  background: url("../assets/girl-with-virtual-glasses.webp");
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center;
   background-size: cover;
   opacity: 0.5;
 }
@@ -44,7 +44,7 @@ body {
 
 .img-colors-de-fundo::before {
   content: "";
-  background: url("../assets/7496.png");
+  background: url("../assets/colors-splash.webp");
   background-size: cover;
   position: absolute;
   top: -200px;
