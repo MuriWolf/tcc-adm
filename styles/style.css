@@ -41,7 +41,6 @@ body {
   color: #060182;
 }
 
-
 .img-colors-de-fundo::before {
   content: "";
   background: url("../assets/colors-splash.webp");
@@ -54,13 +53,16 @@ body {
   z-index: -1;
   width: calc(100% + 250px);
   height: calc(100% + 250px);
-
 }
 
 .btn--matricular {
   /*  box-shadow: 0 4px 0 black !important;*/
-  border: black solid 2px;
-  border-bottom: black solid 4px;
+  border: black solid 3px;
+  border-bottom: black solid 7px;
+}
+
+.btn--matricular:hover {
+  border-bottom: black solid 3px;
 }
 
 .floating {
