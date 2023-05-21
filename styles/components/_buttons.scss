@@ -1,0 +1,32 @@
+.btn--matricular {
+    border: black solid 3px;
+    border-bottom: black solid 7px;
+    transform: rotateX(15deg);
+    position: relative;
+    transition: all 0.1s;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.144);
+  }
+  
+  .btn--matricular:hover, .btn--matricular:focus {
+    border-bottom: black solid 3px;
+    transform: scale(0.98);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
+  }
+  
+  .btn--cadastrar {
+    border: black solid 3px;
+    border-bottom: black solid 7px;
+    border-right: black solid 7px;
+    transform: rotateX(15deg);
+    position: relative;
+    transition: all 0.2s;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.144);
+  }
+  
+  .btn--cadastrar:hover, .btn--cadastrar:focus {
+    border-bottom: black solid 3px;
+    border-right: black solid 3px;
+    transform: scale(0.98);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
+  }
+  
