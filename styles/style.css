@@ -33,7 +33,6 @@
 
 .bg-dark-blue {
   background: linear-gradient(34deg, #060182, #062899);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23060182' cx='50' cy='0' r='50'/%3E%3Cg fill='%23060383' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23060684' cx='50' cy='100' r='50'/%3E%3Cg fill='%23050886' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23050b87' cx='50' cy='200' r='50'/%3E%3Cg fill='%23050d88' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23051089' cx='50' cy='300' r='50'/%3E%3Cg fill='%2305128a' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%2305148b' cx='50' cy='400' r='50'/%3E%3Cg fill='%2305168d' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%2305188e' cx='50' cy='500' r='50'/%3E%3Cg fill='%2305198f' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23051b90' cx='50' cy='600' r='50'/%3E%3Cg fill='%23051d91' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23051f92' cx='50' cy='700' r='50'/%3E%3Cg fill='%23052093' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23052295' cx='50' cy='800' r='50'/%3E%3Cg fill='%23052396' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23052597' cx='50' cy='900' r='50'/%3E%3Cg fill='%23062698' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23062899' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: contain;
 }
@@ -74,11 +73,18 @@
   bottom: 0;
   right: 0;
   z-index: -1;
-  background: url("../assets/girl-with-virtual-glasses.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.5;
+}
+
+.hero-index::before {
+  background: url("../assets/girl-with-virtual-glasses.webp") !important;
+}
+
+.hero-cc::before {
+  background: url("../../assets/notebook.webp") !important;
 }
 
 body {
