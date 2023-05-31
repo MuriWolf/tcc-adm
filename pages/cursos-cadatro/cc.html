@@ -43,9 +43,9 @@
 	</header>
     <main class="py-10 mx-4">
         <!-- <div class="max-w-4xl mx-auto"><img  src="../../assets/compare-fibre-Y8TiLvKnLeg-unsplash.jpg" alt=""></div> -->
-        <div class="container mx-auto mt-8">
-            <div class="flex gap-12 items-start">
-                <section class="flex-1">
+        <div class="container mx-auto mt-8 max-w-5xl">
+            <div class="flex gap-12 items-start justify-between">
+                <section class="max-w-lg flex-1">
                     <h2 class="text-3xl font-semibold">
                         Sobre o curso
                     </h2>
@@ -60,49 +60,40 @@
 
                     </p>
                 </section>
-                <section>
+                <section class="flex-1">
                     <h2 class="text-3xl font-semibold">
                         Grade Curricular
                     </h2>
-                    <table class="mt-4 flex-1 table-auto border border-separate border-slate-500 border-spacing-2">
+                    <table class="mt-4 table-fixed border border-gray-300">
                         <thead>
-                          <tr>
-                            <th>Song</th>
-                            <th>Artist</th>
-                            <th>Year</th>
+                          <tr> 
+                            <th class="text-white bg-blue-900 py-2">Matéria</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="w-28">
+                            <tr>
+                              <td class="border-b px-4 py-2 bg-gray-300">Álgebra Linear</td>
+                            </tr>
+                            <tr>
+                              <td class="border-b px-4 py-2">Análises de Sistemas</td>
+                            </tr>
+                            <tr>
+                              <td class="border-b px-4 py-2 bg-gray-300">Banco de Dados</td>
+                            </tr>
+                            <tr>
+                              <td class="border-b px-4 py-2">Cálculo Diferencial e Integral</td>
+                            </tr>
+                            <tr>
+                              <td class="border-b px-4 py-2 bg-gray-300">Empreendimentos em Informática</td>
+                            </tr>
+                            <tr>
+                              <td class="border-b px-4 py-2">Inteligência Artificial</td>
+                            </tr>
+                            <tr>
+                              <td class="border-b px-4 py-2 bg-gray-300">Redes de Comunicação de Dados</td>
+                            </tr>
                           <tr>
-                            <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                            <td>Malcolm Lockyer</td>
-                            <td>1961</td>
-                          </tr>
-                          <tr>
-                            <td>Witchy Woman</td>
-                            <td>The Eagles</td>
-                            <td>1972</td>
-                          </tr>
-                          <tr>
-                            <td>Shining Star</td>
-                            <td>Earth, Wind, and Fire</td>
-                            <td>1975</td>
-                          </tr>
-                          <tr>
-                            <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                            <td>Malcolm Lockyer</td>
-                            <td>1961</td>
-                          </tr>
-                          <tr>
-                            <td>Witchy Woman</td>
-                            <td>The Eagles</td>
-                            <td>1972</td>
-                          </tr>
-                          <tr>
-                            <td>Shining Star</td>
-                            <td>Earth, Wind, and Fire</td>
-                            <td>1975</td>
-                          </tr>
+                            <td class="px-4 py-2">Algoritmos e Programação de Computadores</td></tr>
                         </tbody>
                       </table>
                 </section>
@@ -116,43 +107,30 @@
                         A grade curricular de um curso de Ciência da Computação é composta por uma variedade de disciplinas teóricas e práticas que abrangem os princípios fundamentais e avançados da área. Os alunos são inicialmente introduzidos aos conceitos básicos, como programação, estruturas de dados e algoritmos, que são essenciais para construir uma base sólida de conhecimento. 
                     </p>
                     <p class="mt-4">À medida que avançam no curso, eles exploram tópicos mais complexos, como inteligência artificial, aprendizado de máquina, segurança da informação, sistemas operacionais e redes de computadores.</p>
-                    <p class="mt-4">Além dos aspectos técnicos, a grade curricular também pode incluir disciplinas relacionadas à matemática, teoria da computação, engenharia de software, desenvolvimento web, computação gráfica e sistemas distribuídos. Essas áreas complementares ajudam os alunos a compreender a ciência da computação em um contexto mais amplo e fornecem uma visão abrangente da disciplina.</p>
                     <p class="mt-4">
                         Ao longo do curso, os alunos têm a oportunidade de aplicar seus conhecimentos teóricos em projetos práticos, onde podem desenvolver software, resolver problemas reais e trabalhar em equipe. Também podem participar de estágios ou programas de pesquisa, nos quais têm a chance de se envolver em projetos de vanguarda e ganhar experiência no campo.
 
 
                     </p>
                 </section>
-                <section>
+                <section class="flex-1">
                     <h2 class="text-3xl font-semibold">
-                        Horários e turmas
+                        Informações relevantes
                     </h2>
-                    <table class="mt-4 flex-1 table-auto border border-separate border-slate-500 border-spacing-2">
-                        <thead>
-                          <tr>
-                            <th>Song</th>
-                            <th>Artist</th>
-                            <th>Year</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                            <td>Malcolm Lockyer</td>
-                            <td>1961</td>
-                          </tr>
-                          <tr>
-                            <td>Witchy Woman</td>
-                            <td>The Eagles</td>
-                            <td>1972</td>
-                          </tr>
-                          <tr>
-                            <td>Shining Star</td>
-                            <td>Earth, Wind, and Fire</td>
-                            <td>1975</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div class="border-gray-400 border-2 p-4 flex justify-between mt-6">
+                        <div class="flex flex-col">
+                          <p class="font-semibold"><i class="fa-solid fa-clock"></i> Carga Horária</p>
+                          <p>2000 horas</p>
+                        </div>
+                        <div class="flex flex-col">
+                          <p class="font-semibold"><i class="fa-solid fa-calendar"></i> Duração</p>
+                          <p>4 Semestres</p>
+                        </div>
+                        <div class="flex flex-col">
+                          <p class="font-semibold"><i class="fa-sharp fa-solid fa-sun"></i>Período</p>
+                          <p>Noturno</p>
+                        </div>
+                    </div>
                 </section>
             </div>
 
