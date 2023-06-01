@@ -31,8 +31,10 @@
                     <li><a href="./../sobre-nos.html"
                             class="text-white text-lg hover:text-yellow-400 focus:text-yellow-400 hover:font-bold drop-shadow-lg focus:font-bold inline-block text-border">Sobre
                             nós</a></li>
-                    <li><a href="./../pagina-cadastro.html"
-                            class="inline-block py-2 px-3 rounded-xl text-center bg-yellow-400 text-black font-bold btn--cadastrar ">Cadastro</a>
+                    <li><div class="bg-red">
+                        <a href="./../pagina-cadastro.html"
+                                class="inline-block py-2 px-3 rounded-xl text-center bg-yellow-400 text-black font-bold btn--cadastrar">Cadastro</a>
+                    </div>
                     </li>
                 </ul>
             </nav>
@@ -67,7 +69,7 @@
                     <table class="mt-4 table-fixed border border-gray-300">
                         <thead>
                           <tr> 
-                            <th class="text-white bg-blue-900 py-2">Matéria</th>
+                            <th class="text-white bg-dark-blue py-2">Matéria</th>
                           </tr>
                         </thead>
                         <tbody class="w-28">
@@ -98,46 +100,53 @@
                       </table>
                 </section>
             </div>
-            <div class="flex gap-12 items-start mt-8">
+            <h2 class="text-3xl font-semibold text-center mt-20">
+                Informações relevantes
+            </h2>
+            <div class="p-4 flex justify-around mt-6 bg-dark-blue text-gray-100 rounded-md shadow-lg">
+                <div class="flex flex-col">
+                    <p class="font-bold"><i class="fa-solid fa-clock text-yellow-400"></i> Carga Horária</p>
+                    <p>2000 horas</p>
+                </div>
+                <div class="flex flex-col">
+                    <p class="font-bold"><i class="fa-solid fa-calendar text-yellow-400"></i> Duração</p>
+                    <p>4 Semestres</p>
+                </div>
+                <div class="flex flex-col">
+                    <p class="font-bold"><i class="fa-sharp fa-solid fa-sun text-yellow-400"></i> Período</p>
+                    <p>Noturno</p>
+                </div>
+            </div>
+            <h2 class="text-3xl font-semibold text-center mt-20">
+                Mais sobre
+            </h2>
+            <div class="flex gap-12 items-start">
                 <section class="flex-1">
-                    <h2 class="text-3xl font-semibold">
-                        Mais sobre
-                    </h2>
                     <p class="mt-4">
                         A grade curricular de um curso de Ciência da Computação é composta por uma variedade de disciplinas teóricas e práticas que abrangem os princípios fundamentais e avançados da área. Os alunos são inicialmente introduzidos aos conceitos básicos, como programação, estruturas de dados e algoritmos, que são essenciais para construir uma base sólida de conhecimento. 
                     </p>
                     <p class="mt-4">À medida que avançam no curso, eles exploram tópicos mais complexos, como inteligência artificial, aprendizado de máquina, segurança da informação, sistemas operacionais e redes de computadores.</p>
-                    <p class="mt-4">
-                        Ao longo do curso, os alunos têm a oportunidade de aplicar seus conhecimentos teóricos em projetos práticos, onde podem desenvolver software, resolver problemas reais e trabalhar em equipe. Também podem participar de estágios ou programas de pesquisa, nos quais têm a chance de se envolver em projetos de vanguarda e ganhar experiência no campo.
-
-
-                    </p>
                 </section>
                 <section class="flex-1">
-                    <h2 class="text-3xl font-semibold">
-                        Informações relevantes
-                    </h2>
-                    <div class="border-gray-400 border-2 p-4 flex justify-between mt-6">
-                        <div class="flex flex-col">
-                          <p class="font-semibold"><i class="fa-solid fa-clock"></i> Carga Horária</p>
-                          <p>2000 horas</p>
-                        </div>
-                        <div class="flex flex-col">
-                          <p class="font-semibold"><i class="fa-solid fa-calendar"></i> Duração</p>
-                          <p>4 Semestres</p>
-                        </div>
-                        <div class="flex flex-col">
-                          <p class="font-semibold"><i class="fa-sharp fa-solid fa-sun"></i>Período</p>
-                          <p>Noturno</p>
-                        </div>
+                    <p class="mt-4">
+                        Ao longo do curso, os alunos têm a oportunidade de aplicar seus conhecimentos teóricos em projetos práticos, onde
+                        podem desenvolver software, resolver problemas reais e trabalhar em equipe. Também podem participar de estágios ou
+                        programas de pesquisa, nos quais têm a chance de se envolver em projetos de vanguarda e ganhar experiência no campo.
+                    </p>
+                </section>  
+            </div>  
+            <section class="border-4 border-gray-900 mt-8 rounded-md text-center max-w-lg mx-auto shadow-lg relative ">
+                <h2 class="text-3xl bg-dark-blue py-3 text-gray-50 border-gray-900 border-b-4">Faça já seu cadastro!</h2>
+                <div class="px-6 pb-6">
+                    <p class="mt-4">O curso que mudará o rumo da história de seu filho está a um clique.</p>
+                    <p>Caso queira conhecer mais sobre o curso de Ciência da Computação, entre em contato conosco atráves de uma das nossas redes sociais abaixo.</p>
+                    <div class="h-12">
+                        <a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular "
+                            href="pages/cursos-cadatro/cc.html">Cadastrar-se</a>
                     </div>
-                </section>
-            </div>
-
-
-
-
-            
+                    <a class="underline text-gray-400 mt-2 block" href="./../pagina-cadastro.html">Não tenho conta</a>
+                </div>
+            </section>          
         </div>
     </main>
     <footer class="bg-dark-blue--footer w-full h-24">

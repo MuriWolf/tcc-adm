@@ -19,7 +19,6 @@
   border-bottom: black solid 7px;
   border-right: black solid 7px;
   transform: rotateX(15deg);
-  position: relative;
   transition: all 0.2s;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.144);
 }
@@ -114,7 +113,8 @@ body {
 }
 
 .floating {
-  animation: floating 32s ease-in-out both alternate infinite;
+  -webkit-animation: floating 32s ease-in-out both alternate infinite;
+          animation: floating 32s ease-in-out both alternate infinite;
 }
 
 .grid-template-columns {
