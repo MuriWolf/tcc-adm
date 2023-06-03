@@ -29,10 +29,10 @@
                 </ul>
                 <ul class="flex gap-4 ml-8 items-center">
                     <li><a href="sobre-nos.html"
-                            class="text-white text-lg hover:text-yellow-400 focus:text-yellow-400 hover:font-bold drop-shadow-lg focus:font-bold inline-block text-border">Sobre
+                            class="text-white text-sm min-[360px]:text-lg hover:text-yellow-400 focus:text-yellow-400 hover:font-bold drop-shadow-lg focus:font-bold inline-block text-border">Sobre
                             nós</a></li>
                     <li><a href="pagina-cadastro.html"
-                            class="inline-block py-2 px-3 rounded-xl text-center bg-yellow-400 text-black font-bold btn--cadastrar ">Cadastro</a>
+                            class="inline-block py-2 text-sm min-[360px]:text-lg px-3 rounded-xl text-center bg-yellow-400 text-black font-bold btn--cadastrar ">Cadastro</a>
                     </li>
                 </ul>
             </nav>
@@ -42,7 +42,7 @@
         </section>
 	</header>
 
-    <main class="py-10 px-4 max-w-2xl mx-auto">
+    <main class="py-12 px-4 max-w-2xl mx-auto">
         <p class="text-gray-800 text-sm">Estamos felizes por você estar aqui. Por favor, preencha o formulário abaixo para que possamos ajudá-lo a escolher o curso perfeito.</p>
         <p class="text-gray-800 text-sm mt-3">Sua privacidade é importante para nós! <span class="bg-yellow-300">Leia atentamente antes de enviar suas informações.</span></p>
         <form class="w-full max-w-lg mx-auto mt-6">
@@ -53,7 +53,7 @@
                     </label>
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                        id="grid-first-name" type="text" placeholder="João">
+                        id="grid-first-name" type="text" placeholder="Informe seu primeiro nome">
                     <!-- <p class="text-red-500 text-xs italic">Preencha esse campo.</p> -->
                 </div>
                 <div class="w-full md:w-1/2 px-3">
@@ -62,7 +62,7 @@
                     </label>
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-last-name" type="text" placeholder="Silva">
+                        id="grid-last-name" type="text" placeholder="Informe seu sobrenome">
                 </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -73,7 +73,6 @@
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id="grid-password" type="email" placeholder="nome@email.com">
-                    <p class="text-gray-600 text-xs italic">Informe seu email</p>
                 </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -83,7 +82,7 @@
                     </label>
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-password" type="password" placeholder="******************">
+                        id="grid-password" type="password" placeholder="********">
                     <p class="text-gray-600 text-xs italic">Coloque mais de 8 caracteres.</p>
                 </div>
             </div>
@@ -94,11 +93,14 @@
                     </label>
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-password" type="password" placeholder="******************">
-                    <p class="text-gray-600 text-xs italic">Escreva igual à senha anterior.</p>
+                        id="grid-password" type="password" placeholder="********">
+                    <p class="text-gray-600 text-xs italic">Escreva igual a senha anterior.</p>
                 </div>
             </div>
-
+            <div class="h-12">
+                <a class="p-3 mt-8 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular "
+                    href="#">Cadastre-se</a>
+            </div>
         </form>
     </main>
 
