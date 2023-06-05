@@ -1,0 +1,10 @@
+create database southtech;
+
+use south_tech;
+create table usuario (
+    UserID INT NOT NULL AUTO_INCREMENT,
+    Nome VARCHAR(76) NOT NULL,
+    Email VARCHAR(76) NOT NULL, 
+    Senha VARCHAR(64) NOT NULL, 
+    PRIMARY KEY(UserID)
+)

@@ -45,25 +45,25 @@
     <main class="py-12 px-4 max-w-2xl mx-auto">
         <p class="text-gray-800 text-sm">Estamos felizes por você estar aqui. Por favor, preencha o formulário abaixo para que possamos ajudá-lo a escolher o curso perfeito.</p>
         <p class="text-gray-800 text-sm mt-3">Sua privacidade é importante para nós! <span class="bg-yellow-300">Leia atentamente antes de enviar suas informações.</span></p>
-        <form class="w-full max-w-lg mx-auto mt-6">
+        <form class="w-full max-w-lg mx-auto mt-6" action="../modules/cadastrar.php" method="post">
             <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <div class="w-full px-3 mb-6 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                         Nome
                     </label>
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                        id="grid-first-name" type="text" placeholder="Informe seu primeiro nome">
+                        id="grid-first-name" type="text" placeholder="Informe seu nome completo" name="nomeUser">
                     <!-- <p class="text-red-500 text-xs italic">Preencha esse campo.</p> -->
                 </div>
-                <div class="w-full md:w-1/2 px-3">
+                <!-- <div class="w-full md:w-1/2 px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                         Sobrenome
                     </label>
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-last-name" type="text" placeholder="Informe seu sobrenome">
-                </div>
+                        id="grid-last-name" type="text" placeholder="Informe seu sobrenome" name="name">
+                </div> -->
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full px-3">
@@ -72,7 +72,7 @@
                     </label>
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-password" type="email" placeholder="nome@email.com">
+                        id="grid-password" type="email" placeholder="nome@email.com" name="emailUser">
                 </div>
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -82,7 +82,7 @@
                     </label>
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-password" type="password" placeholder="********">
+                        id="grid-password" type="password" placeholder="********" name="senhaUser">
                     <p class="text-gray-600 text-xs italic">Coloque mais de 8 caracteres.</p>
                 </div>
             </div>
@@ -93,13 +93,13 @@
                     </label>
                     <input
                         class="transition-all appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-password" type="password" placeholder="********">
+                        id="grid-password" type="password" placeholder="********" name="senhaRepetidaUser">
                     <p class="text-gray-600 text-xs italic">Escreva igual a senha anterior.</p>
                 </div>
             </div>
             <div class="h-12">
-                <a class="p-3 mt-8 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular "
-                    href="#">Cadastre-se</a>
+                <button type="submit" class="p-3 mt-8 rounded-xl w-full text-center block bg-yellow-400 text-black font-bold btn--matricular "
+                    href="#">Cadastre-se</button>
             </div>
         </form>
     </main>
