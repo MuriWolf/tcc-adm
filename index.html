@@ -12,9 +12,8 @@
 </head>
 
 <body class="bg-dark-blue w-screen overflow-x-hidden highlight-yellow text-gray-700">
-    <header class="hero hero-index h-screen max-h-[46rem]">
+    <header class="hero hero-index h-screen max-h-[1000px]">
         <div class="container flex justify-between items-center bg-black bg-opacity-25 py-6 px-4 md:px-12 min-w-full">
-
             <a href="#">
                 <div style="height: 60px; width: 60px; border-radius: 100px; background-color: white;"></div>
             </a> <!-- LOGO IMAGE -->
@@ -31,7 +30,7 @@
                 </ul>
                 <ul class="flex gap-4 ml-8 items-center">
                     <li><a href="pages/sobre-nos.html"
-                            class="text-white text-sm min-[360px]:text-lg hover:text-yellow-400 focus:text-yellow-400 hover:font-bold drop-shadow-lg focus:font-bold inline-block text-border">Sobre
+                            class="text-white text-sm min-[360px]:text-lg hover:text-yellow-400 focus:text-yellow-400 font-bold drop-shadow-lg focus:font-bold inline-block text-border">Sobre
                             nós</a></li>
                     <li><a href="./pages/pagina-cadastro.html"
                             class="inline-block text-sm min-[360px]:text-lg py-2 px-3 rounded-xl text-center bg-yellow-400 text-black font-bold btn--cadastrar ">Cadastro</a>
@@ -40,8 +39,8 @@
             </nav>
         </div>
         <section class="container flex justify-center items-center flex-col mx-auto h-full w-full">              
-            <h1 class="text-5xl md:text-8xl text-center text-white font-bold leading-12 block px-4">A tecnologia move o mundo. </h1>
-            <h3 class="text-xl sm:text-2xl lg:text-3xl italic text-yellow-400 block text-border">"Steve Jobs"</h3>
+            <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl md:text-center text-white font-bold leading-12 block px-4 uppercase">A tecnologia move o mundo. </h1>
+            <h3 class="text-xl sm:text-2xl lg:text-3xl italic text-yellow-400 block mt-2">"Steve Jobs"</h3>
         </section>
 
     </header>
@@ -63,8 +62,8 @@
                     </div>
 
                     <div
-                        class="basis-60 img-colors-de-fundo flex-1 z-10 rounded-3xl relative max-w-lg border-black border-dashed border-4">
-                        <img class="rounded-3xl" src="./assets/kids-with-glasses.webp" alt="">
+                        class="basis-60 img-colors-de-fundo flex-1 max-sm:mt-8 z-10 rounded-3xl relative max-w-lg border-black border-dashed border-4">
+                        <img class="rounded-3xl h-full" src="./assets/kids-with-glasses.webp" class="" alt="">
                     </div>
                 </div>
             </div>
@@ -76,10 +75,11 @@
 
                     <!-- FAZER UM LOOP COM PHP PARA FAZER APARECER OS CARDS -->
 
-                    <div class="bg-white p-6 rounded-xl transition-all border-black border-2 flex flex-col justify-between">
-                        <div>
-                            <div class="rounded overflow-hidden border-2 border-dashed border-black"><img
-                                    src="./assets/notebook.webp" alt=""></div>
+                    <div class="relative bg-white p-6 rounded-xl transition-all border-black border-2 flex flex-col justify-between">
+                        <div class="mb-16">
+                            <div class="rounded overflow-hidden border-2 border-dashed border-black">
+                                <img src="./assets/notebook.webp" alt="">
+                            </div>
                             <h2 class="text-xl font-bold mt-4 text-gray-900">Ciência da Computação</h2>
                             <p class="text-gray-900">Ciência da Computação é o curso que estuda tecnologias e conceitos
                                 relacionados a computação e informática. O curso envolve programação, algoritmos,
@@ -88,27 +88,27 @@
                             </p>
                         </div>
                         <div>
-                            <a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
+                            <a class="absolute bottom-5 left-5 right-5 p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
                                 href="pages/cursos-cadatro/cc.html">Matricular-se</a>
                         </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-xl transition-all border-black border-2 flex flex-col justify-between">
-                        <div>
+                    <div class="relative bg-white p-6 rounded-xl transition-all border-black border-2 flex flex-col justify-between">
+                        <div class="mb-16">
                             <div class="rounded overflow-hidden border-2 border-dashed border-black"><img
                                     src="./assets/iot.webp" alt=""></div>
                             <h2 class="text-xl font-bold mt-4 text-gray-900">Internet das coisas (IoT)</h2>
-                            <p class="text-gray-900">O curso de IoT (Internet das Coisas) é um programa de estudo que abrange os fundamentos e aplicações da interconexão digital de dispositivos físicos por meio da Internet. Os alunos aprendem a criar e implementar soluções inteligentes, explorando conceitos de sensores, redes, segurança e análise de dados. Com foco na integração de tecnologias, o curso capacita os estudantes a projetar e desenvolver sistemas conectados que impulsionam a automação, a eficiência e a inovação em diversos setores, como saúde, transporte, energia e agricultura.
+                            <p class="text-gray-900">terconexão digital de dispositivos físicos por meio da Internet. Os alunos aprendem a criar e implementar soluções inteligentes, explorando conceitos de sensores, redes, segurança e análise de dados. Com foco na integração de tecnologias, o curso capacita os estudantes a projetar e desenvolver sistemas conectados que impulsionam a automação, a eficiência e a inovação em diversos setores, como saúde, transporte, energia e agricultura. 
                             </p>
                         </div>
                         <div>
-                            <a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
+                            <a class="absolute bottom-5 left-5 right-5 p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
                                 href="pages/cursos-cadatro/iot.html">Matricular-se</a>
                         </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-xl transition-all border-black border-2 flex flex-col justify-between">
-                        <div>
+                    <div class="relative bg-white p-6 rounded-xl transition-all border-black border-2 flex flex-col justify-between">
+                        <div class="mb-16">
                             <div class="rounded overflow-hidden border-2 border-dashed border-black"><img
                                     src="./assets/programming.webp" alt=""></div>
                             <h2 class="text-xl font-bold mt-4 text-gray-900">Programação</h2>
@@ -116,13 +116,13 @@
                             </p>
                         </div>
                         <div>
-                            <a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
+                            <a class="absolute bottom-5 left-5 right-5 p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
                                 href="pages/cursos-cadatro/programacao.html">Matricular-se</a>
                         </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-xl transition-all border-black border-2 flex flex-col justify-between">
-                        <div>
+                    <div class="relative bg-white p-6 rounded-xl transition-all border-black border-2 flex flex-col justify-between">
+                        <div class="mb-16">
                             <div class="rounded overflow-hidden border-2 border-dashed border-black"><img
                                     src="./assets/robotics.webp" alt=""></div>
                             <h2 class="text-xl font-bold mt-4 text-gray-900">Robótica</h2>
@@ -130,7 +130,7 @@
                             </p>
                         </div>
                         <div>
-                            <a class="p-2 mt-6 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
+                            <a class="absolute bottom-5 left-5 right-5 p-2 rounded-xl text-center block bg-yellow-400 text-black font-bold btn--matricular"
                                 href="pages/cursos-cadatro/robotica.html">Matricular-se</a>
                         </div>
                     </div>
